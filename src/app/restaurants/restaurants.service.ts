@@ -1,0 +1,28 @@
+import { Restaurant } from "./restaurant/restaurant.model";
+
+export class RestaurantsService {
+  constructor() {}
+
+  rests: Restaurant[] = [
+    {
+      id: "bread-bakery",
+      name: "Bread & Bakery",
+      category: "Bakery",
+      deliveryEstimate: "25m",
+      rating: 4.9,
+      imagePath: "assets/img/restaurants/breadbakery.png",
+    },
+    {
+      id: "burguer-house",
+      name: "Burguer House",
+      category: "Hamburguers",
+      deliveryEstimate: "100m",
+      rating: 3.3,
+      imagePath: "assets/img/restaurants/burgerhouse.png",
+    },
+  ];
+
+  restaurants(): Restaurant[] {
+    return this.rests;
+  }
+}
